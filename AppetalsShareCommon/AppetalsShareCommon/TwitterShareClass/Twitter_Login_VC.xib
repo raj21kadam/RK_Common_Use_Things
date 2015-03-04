@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Twitter_Login_VC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lH-V0-oFz">
+                    <rect key="frame" x="88" y="269" width="144" height="30"/>
+                    <color key="backgroundColor" red="0.067546760948905105" green="0.1695084397810219" blue="0.71413093065693434" alpha="0.42999999999999999" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="144" id="0K7-Eg-Cia"/>
+                        <constraint firstAttribute="height" constant="30" id="gT7-27-6dK"/>
+                    </constraints>
+                    <state key="normal" title="Twitter Login">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginClicked:" destination="-1" eventType="touchUpInside" id="Cxi-Wu-YSg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIz-nh-Huc">
+                    <rect key="frame" x="88" y="326" width="144" height="30"/>
+                    <color key="backgroundColor" red="0.067546760950000007" green="0.16950843979999999" blue="0.7141309307" alpha="0.42999999999999999" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Ib9-QT-fLu"/>
+                        <constraint firstAttribute="width" constant="144" id="Lw8-xq-orl"/>
+                    </constraints>
+                    <state key="normal" title="Twitter Friends">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fetchFriends:" destination="-1" eventType="touchUpInside" id="Mot-9N-wB0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDS-DY-vhx">
+                    <rect key="frame" x="88" y="373" width="144" height="30"/>
+                    <color key="backgroundColor" red="0.067546760950000007" green="0.16950843979999999" blue="0.7141309307" alpha="0.42999999999999999" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="144" id="Uyn-y4-nY8"/>
+                        <constraint firstAttribute="height" constant="30" id="i8j-N9-Y0j"/>
+                    </constraints>
+                    <state key="normal" title="Post Twitte">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="postOnTwitter:" destination="-1" eventType="touchUpInside" id="FJh-pt-xAe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSp-hw-Hxh">
+                    <rect key="frame" x="88" y="411" width="144" height="30"/>
+                    <color key="backgroundColor" red="0.067546760950000007" green="0.16950843979999999" blue="0.7141309307" alpha="0.42999999999999999" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="8ZK-cI-0uR"/>
+                        <constraint firstAttribute="width" constant="144" id="bH8-ds-VqD"/>
+                    </constraints>
+                    <state key="normal" title="Fetch Timeline">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fetchUserTimeline:" destination="-1" eventType="touchUpInside" id="uHc-Mg-Als"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IN0-Ib-usN">
+                    <rect key="frame" x="8" y="22" width="72" height="30"/>
+                    <state key="normal" title="Back">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backClicked:" destination="-1" eventType="touchUpInside" id="aIM-LY-bK4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="IDS-DY-vhx" firstAttribute="top" secondItem="wIz-nh-Huc" secondAttribute="bottom" constant="17" id="8ZL-i5-sog"/>
+                <constraint firstAttribute="centerX" secondItem="0lH-V0-oFz" secondAttribute="centerX" id="9Wl-Wk-3yY"/>
+                <constraint firstItem="LSp-hw-Hxh" firstAttribute="top" secondItem="IDS-DY-vhx" secondAttribute="bottom" constant="8" id="AHg-yB-h00"/>
+                <constraint firstItem="wIz-nh-Huc" firstAttribute="top" secondItem="0lH-V0-oFz" secondAttribute="bottom" constant="27" id="Ggy-Ap-iS3"/>
+                <constraint firstAttribute="centerY" secondItem="0lH-V0-oFz" secondAttribute="centerY" id="Ij2-uF-Z9Z"/>
+                <constraint firstItem="LSp-hw-Hxh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="88" id="jgL-pN-v41"/>
+                <constraint firstItem="IDS-DY-vhx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="88" id="ngh-63-Y5P"/>
+                <constraint firstItem="wIz-nh-Huc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="88" id="yAA-Dx-0Du"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="-31" y="62"/>
+        </view>
+    </objects>
+</document>
